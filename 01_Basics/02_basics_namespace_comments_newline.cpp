@@ -23,7 +23,7 @@ int main() {
 
     cout << "Now we're using 'using namespace std;'" << endl;
     cout << "So we can write cout and endl directly without std:: prefix.\n";
-    
+
     // 'using namespace std;' brings everything from the standard namespace into current scope,
     // so we don't have to write std:: before cout, cin, endl, etc.
 
@@ -33,6 +33,11 @@ int main() {
 
     // In C++, cout does NOT add a newline automatically like Python's print().
     // You must use \n or endl explicitly if you want the output to go to the next line.
+
+    // ----------- Another way to chain newlines -----------
+    cout << "Hey! It's a new way for" << endl << "using the newline/endl" << endl;
+
+    // Chaining multiple << and endl can help split long outputs into separate lines.
 
     // return 0; tells the operating system that the program ran successfully.
     return 0;
