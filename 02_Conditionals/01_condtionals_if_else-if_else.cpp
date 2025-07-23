@@ -93,11 +93,14 @@ Example:
     cout << "Enter your age: ";
     cin >> age;
 
-    if (age >= 18) {
-        cout << "You are eligible to vote." << endl;
-    }
-    else {
-        cout << "You are NOT eligible to vote." << endl;
+    if (age>=18) {
+        cout<<"You are eligible to vote!";
+    } else { //An alternative to else if
+        if (age==0) {
+            cout<<"You are yet to born kid!";
+        } else {
+            cout<<"You are not yet eligible to vote!\n"<<"Wait for another "<<18-age<<" years to be able to vote!";
+        }  
     }
 
     // -------------------- 4. Largest of 3 Numbers --------------------
