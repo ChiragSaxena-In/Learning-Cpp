@@ -9,12 +9,12 @@ Definition: A prime number is a number greater than 1 that has no divisors other
 We’ll use two methods to check if a number is prime:
 
 -------------------------------------------------------
-🟢 Method 1: Brute Force
+ Method 1: Brute Force
 - Check if the number is divisible by any number from 2 to (n - 1)
 - Works fine for small numbers
 - Becomes very slow for large numbers
 
-🟢 Method 2: Optimized using Square Root (√n)
+ Method 2: Optimized using Square Root (√n)
 - Key Idea:
     If n = a × b, then one of them must be ≤ √n
     Because if both a and b > √n, then a × b > n (which is impossible)
