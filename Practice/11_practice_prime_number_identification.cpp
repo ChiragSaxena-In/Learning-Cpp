@@ -36,8 +36,8 @@ Only need to check 2 to 9 — no divisors ⇒ Prime
 
 int main() {
     int number;
-    bool isPrimeBrute = true;
-    bool isPrimeSqrt = true;
+    bool isPrimeBrute = true; // flagging variable
+    bool isPrimeSqrt = true;  // flagging variable
 
     std::cout << "Enter a number to check whether it's a prime number or not: ";
     std::cin >> number;
