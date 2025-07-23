@@ -17,12 +17,14 @@ int main() {
     // Without 'using namespace std;', we must prefix standard library items like cout and endl with 'std::'.
     // \n just adds a newline. It's faster because it doesn't flush the output buffer.
     // endl also adds a newline AND flushes the buffer, forcing output to appear immediately.
+    // The '\t' is an escape character that inserts a horizontal tab.
+    // It helps align columns neatly by adding spacing similar to pressing the TAB key.
 
     // ----------- Now we use 'using namespace std;' -----------
     using namespace std;
 
     cout << "Now we're using 'using namespace std;'" << endl;
-    cout << "So we can write cout and endl directly without std:: prefix.\n";
+    cout << "\tSo we can write cout and endl directly without std:: prefix.\n";
 
     // 'using namespace std;' brings everything from the standard namespace into current scope,
     // so we don't have to write std:: before cout, cin, endl, etc.
