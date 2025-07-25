@@ -13,7 +13,7 @@ Examples:
 
 Optimization:
 - 1 is always a divisor → add it directly.
-- No divisor (except the number itself) is greater than number / 2.
+- No divisor (except the number itself) is greater than (number / 2).
 → So loop only from 2 to number/2 to save time.
 */
 
