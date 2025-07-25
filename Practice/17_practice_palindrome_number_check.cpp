@@ -33,7 +33,7 @@ int main() {
     // Step 1: Reverse the number
     for (int i = number; i > 0; i /= 10) {
         int digit = i % 10;
-        reversed_number = reversed_number * 10 + digit;
+        reversed_number = reversed_number * 10 + digit; // Constructing reverse number.
     }
 
     // Step 2: Check for palindrome
