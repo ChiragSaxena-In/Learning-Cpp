@@ -4,7 +4,7 @@ This repository is my personal journey of learning C++ from scratch — from pri
 
 ---
 
-# Why this repo?
+## Why this repo?
 
 - Track my progress in C++
 - Reinforce concepts through hands-on coding
@@ -13,7 +13,7 @@ This repository is my personal journey of learning C++ from scratch — from pri
 
 ---
 
-# Goals
+## Goals
 
 - Daily or weekly uploads of new topics
 - Learn from mistakes and revisit old code
@@ -21,6 +21,6 @@ This repository is my personal journey of learning C++ from scratch — from pri
 
 ---
 
-# License
+## License
 
 This project is licensed under the MIT License — feel free to use and learn from it!
