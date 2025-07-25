@@ -41,6 +41,11 @@ int main() {
     std::cout << "Enter a number to find trailing zeroes in its factorial: ";
     std::cin >> number;
 
+    if (number < 2) {
+        std::cout << "Please enter a number greater than 2!"; 
+        return 0;
+    }
+
     for (int i = 5; number / i > 0; i *= 5) {
         count_zeroes += number / i;
     }
