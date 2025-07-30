@@ -3,7 +3,7 @@
 /*
 Goal: To print various patterns based on the given number.
 
-Patterns Covered:
+Patterns Covered: (for number = 5)
 1. Single row of stars
 2. Square of stars
 3. Square of same row number
@@ -25,7 +25,7 @@ int main() {
     // ------------------------------------------------------------
     // 1. Single Row of Stars
     /*
-    Desired Output: * * * * * (for number = 5)
+    Desired Output: * * * * * 
     */
     for (int row = 1; row <= number; row++) {
         std::cout << "* ";
