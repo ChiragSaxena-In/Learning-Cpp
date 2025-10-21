@@ -23,17 +23,27 @@ int main() {
     std::cout << "Enter a number to check whether it's a Palindrome Number: ";
     std::cin >> number;
 
-    if (number < 0) {
-        std::cout << "Negative numbers are not considered Palindromes.\n";
+    // Ensure the number has at least two digits
+    if (number >= 0 && number < 10) {
+        std::cout << "Please enter a number with at least 2 digits.\n";
+        return 0;
+    }
+
+    // Negative numbers are not palindromes
+    // Numbers ending with 0 (but not 0 itself) can't be palindrome
+    if (number < 0 || (number % 10 == 0 && number != 0)) {
+        std::cout << number << " is NOT a Palindrome Number.\n";
         return 0;
     }
 
     int original_number = number; // Save the original number for comparison
 
     // Step 1: Reverse the number
-    for (int i = number; i > 0; i /= 10) {
-        int digit = i % 10;
-        reversed_number = reversed_number * 10 + digit; // Constructing reverse number.
+    int temp = number;
+    while (temp > 0) {
+        int digit = temp % 10;
+        reversed_number = reversed_number * 10 + digit;
+        temp /= 10;
     }
 
     // Step 2: Check for palindrome
