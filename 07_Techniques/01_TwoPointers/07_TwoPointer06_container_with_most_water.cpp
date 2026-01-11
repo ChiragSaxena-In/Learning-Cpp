@@ -1,6 +1,6 @@
 /*
 LeetCode: Container With Most Water
-Opposite direction pointers
+Opposite direction pointers.
 */
 
 
