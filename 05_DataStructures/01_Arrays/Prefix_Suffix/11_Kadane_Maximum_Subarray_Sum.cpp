@@ -1,19 +1,19 @@
 /*
 ====================================================
-📌 Kadane's Algorithm – Maximum Subarray Sum
+Kadane's Algorithm – Maximum Subarray Sum
 ====================================================
 
-🔹 Problem:
+Problem:
 Given an integer array, find the maximum sum of a
 contiguous subarray.
 
-🔹 Example:
+Example:
 Input  : [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 Output : 6
 Subarray : [4, -1, 2, 1]
 
 ----------------------------------------------------
-💡 INTUITION (MOST IMPORTANT PART):
+  INTUITION (MOST IMPORTANT PART):
 ----------------------------------------------------
 • While traversing the array, we keep a running sum.
 • If at any point the running sum becomes NEGATIVE,
@@ -21,11 +21,11 @@ Subarray : [4, -1, 2, 1]
 • So we RESET the running sum to 0.
 • Meanwhile, we keep tracking the maximum sum seen so far.
 
-👉 In short:
+  In short:
 "If my past sum is hurting my future sum, discard it."
 
 ----------------------------------------------------
-🧠 Approach (Intuitive Kadane):
+  Approach (Intuitive Kadane):
 ----------------------------------------------------
 1. Initialize:
    - currSum = 0        (current running sum)
@@ -39,8 +39,8 @@ Subarray : [4, -1, 2, 1]
 3. Return maxSum
 
 ----------------------------------------------------
-⏱ Time Complexity: O(n)
-🧠 Space Complexity: O(1)
+ Time Complexity: O(n)
+ Space Complexity: O(1)
 ----------------------------------------------------
 */
 
